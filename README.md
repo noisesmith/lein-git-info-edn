@@ -1,20 +1,13 @@
 # git-info-edn
 
-A Leiningen plugin to do many wonderful things.
+A Leiningen plugin to put git info into a resource.
 
 ## Usage
 
-FIXME: Use this for user-level plugins:
+Put `[git-info-edn "0.1.0"]` into the `:plugins` vector of your
+`:user` profile.
 
-Put `[git-info-edn "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your
-`:user` profile, or if you are on Leiningen 1.x do `lein plugin install
-git-info-edn 0.1.0-SNAPSHOT`.
-
-FIXME: Use this for project-level plugins:
-
-Put `[git-info-edn "0.1.0-SNAPSHOT"]` into the `:plugins` vector of your project.clj.
-
-FIXME: and add an example usage that actually makes sense:
+Or, put `[git-info-edn "0.1.0"]` into the `:plugins` vector of your project.clj.
 
     $ lein git-info-edn
 
