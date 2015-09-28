@@ -2,8 +2,9 @@
   (:require [clojure.java.shell :as sh]))
 
 (defn git-info-edn
-  "I don't do a lot."
+  "adds git info to the resources directory"
   [& _]
   (spit "resources/deploy-info.edn"
         (pr-str {:hash (:out (sh/sh "git" "rev-parse" "HEAD"))
-                 :status (:out (sh/sh "git" "status"))})))
+                 :status (:out (sh/sh "git" "status"))}))
+  true)
