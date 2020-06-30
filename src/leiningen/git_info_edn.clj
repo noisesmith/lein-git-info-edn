@@ -1,6 +1,7 @@
 (ns leiningen.git-info-edn
   (:require [clojure.java.shell :as sh]
             [clojure.string :as string]
+            [clojure.java.io :as io]
             [clojure.pprint :as pprint])
   (:import (java.time Instant)))
 
